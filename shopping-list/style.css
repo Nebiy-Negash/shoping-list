@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Rubik', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Edu NSW ACT Foundation', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -21,10 +21,11 @@
 }
 
 
-body {
+ html ,body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  user-select: none;
 
 
   display: flex;
@@ -49,7 +50,6 @@ img {
   margin-bottom: 1rem;
 }
 input {
-  /* margin: 1rem ; */
   padding: .5rem;
 
   color: #fff;
@@ -58,8 +58,8 @@ input {
   font-size: 1.5rem;
   text-align: center;
   font-family: 'Rubik', system-ui,  Roboto, 'Open Sans',  sans-serif;
-
 }
+
 
 button {
   margin: 1rem;
@@ -71,7 +71,13 @@ button {
   border-radius: .3rem;
   font-size: 1.5rem;
   text-align: center;
-  font-family: 'Rubik', system-ui,  Roboto, 'Open Sans',  sans-serif;
+  font-family:  system-ui,  Roboto, 'Open Sans',  sans-serif;
+}
+
+button:hover,
+button:active {
+  cursor: pointer;
+  background-color: #280807;
 }
 
 ul {
@@ -87,11 +93,17 @@ ul li {
   background-color: #fffdf8;
   box-shadow: 0px 2px 4px rgba(244, 242, 242, 0.949);
 
-  font-size: 1.3rem;
-  font-family: 'Rubik', system-ui, Roboto, 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  font-family: 'Edu NSW ACT Foundation', system-ui, Roboto, 'Open Sans', sans-serif;
 
   padding: .5rem;
   border-radius: .3rem;
+}
+
+ul li:hover,
+ul li:active {
+  cursor: pointer;
+  background-color: #ffecc7;
 }
 
 
@@ -100,9 +112,7 @@ ul li {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+  
   button {
     background-color: #f9f9f9;
   }
